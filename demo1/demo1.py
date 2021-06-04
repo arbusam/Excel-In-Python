@@ -2,14 +2,6 @@
 from openpyxl import Workbook, load_workbook
 from .includes import *
 
-data = {
-    "ID": [1],
-    "URL": ["https://www.youtube.com/watch\?v\=6c2hT_f5Q2g"],
-    "Type": ["video+desc"],
-    "Created Date": [""],
-    "Download Date": [""],
-}
-
 filename = "videos.xlsx"
 
 
@@ -19,6 +11,6 @@ def start():
     ws = wb.active
     ws.title = "Video List"
     
-    ws.append(populate_headings(ws, headings))
+    ws = populate_headings(ws, headings)
 
     wb.save(filename=filename)
