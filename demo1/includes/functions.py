@@ -15,6 +15,5 @@ def populate_headings(ws, values):
     """
     return_value = []
     for i in range(len(values)):
-        return_value.append(values[i]["name"])
-    ws.append(return_value)
+        ws[get_column_letter(i+1) + "1"] = values[i]["name"]
     return ws
