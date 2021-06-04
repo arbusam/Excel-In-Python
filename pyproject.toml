@@ -6,7 +6,7 @@ authors = ["Arhan Busam <arhan.busam@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-black = "^21.5b1"
+openpyxl = "^3.0.7"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^21.5b1", allow-prereleases = true}
