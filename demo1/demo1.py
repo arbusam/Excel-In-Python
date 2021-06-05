@@ -12,5 +12,6 @@ def start():
     ws.title = "Video List"
     
     ws = populate_headings(ws, headings)
+    ws = populate_data(ws, data)
 
     wb.save(filename=filename)
