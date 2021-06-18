@@ -50,3 +50,5 @@ def populate_data(ws, data):
     for row in range(len(data)):
         for column in range(len(data[row])):
             ws[get_column_letter(column+1) + str(row+2)].value = data[row][column]
+            if (ws.column_dimensions[get_column_letter(column+1)].width < len(str(data[row][column]))):
+                ws.column_dimensions[get_column_letter(column+1)].width = len(str(data[row][column]))
