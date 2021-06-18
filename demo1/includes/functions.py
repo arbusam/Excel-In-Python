@@ -31,7 +31,7 @@ def populate_headings(ws, values):
             color=values[i]["text_color"],
         )
 
-        ws[get_column_letter(i+1) + "1"].comment = Comment("This is a heading", "System")
+        ws[get_column_letter(i+1) + "1"].comment = Comment(values[i]["comment"], "System")
         
         ws.column_dimensions[get_column_letter(i+1)].width = values[i]["column_size"]
     return ws

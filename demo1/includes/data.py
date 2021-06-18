@@ -10,6 +10,7 @@ headings = [
         "v_align": "center",
         "text_color": "d90429",
         "bg_color": "dae2e4",
+        "comment": "This is the unique identifier for each row",
     },
     {
         "name": "URL",
@@ -21,6 +22,7 @@ headings = [
         "v_align": "center",
         "text_color": "012a4a",
         "bg_color": "eaeef0",
+        "comment": "This is the URL for the video",
     },
     {
         "name": "Type",
@@ -32,6 +34,7 @@ headings = [
         "v_align": "center",
         "text_color": "9b2226",
         "bg_color": "eaeef0",
+        "comment": "This is the download type for the video",
     },
     {
         "name": "Created Date",
@@ -43,6 +46,7 @@ headings = [
         "v_align": "top",
         "text_color": "343a40",
         "bg_color": "eaeef0",
+        "comment": "This is the date that the entry was created",
     },
     {
         "name": "Download Date",
@@ -54,6 +58,7 @@ headings = [
         "v_align": "center",
         "text_color": "642957",
         "bg_color": "eaeef0",
+        "comment": "This is the date that the video was downloaded (if applicable)",
     },
 ]
 
