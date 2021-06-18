@@ -1,6 +1,7 @@
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Font, Alignment, PatternFill
 from openpyxl import Workbook, load_workbook
+from openpyxl.comments import Comment
 from .data import *
 
 def populate_headings(ws, values):
@@ -29,6 +30,8 @@ def populate_headings(ws, values):
             bold=values[i]["bold"],
             color=values[i]["text_color"],
         )
+
+        ws[get_column_letter(i+1) + "1"].comment = Comment("This is a heading", "System")
         
         ws.column_dimensions[get_column_letter(i+1)].width = values[i]["column_size"]
     return ws
